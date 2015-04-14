@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>blog 首页</title>
+<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap.min.css">
+
+<!-- 可选的Bootstrap主题文件（一般不用引入） -->
+<link rel="stylesheet" href="http://cdn.bootcss.com/bootstrap/3.3.4/css/bootstrap-theme.min.css">
+<link rel="stylesheet" href="http://v3.bootcss.com/examples/blog/blog.css">
+
+
+<script src="http://v3.bootcss.com/assets/js/ie-emulation-modes-warning.js"></script>
+
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="http://cdn.bootcss.com/jquery/1.11.2/jquery.min.js"></script>
+
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="http://cdn.bootcss.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+
+<style>
+.center-block {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+</style>
+</head>
+<body>
+
+
+
+
+<div class="blog-masthead">
+      <div class="container">
+        <nav class="blog-nav">
+          <a class="blog-nav-item active" href="/">首页</a>
+          <a class="blog-nav-item" href="/python">Python</a>
+          <a class="blog-nav-item" href="/mysql">Mysql</a>
+          <a class="blog-nav-item" href="/flask">Flask</a>
+          <a class="blog-nav-item" href="/about">关于</a>
+        </nav>
+      </div>
+    </div>
+
+    <div class="container">
+      <div class="blog-header">
+      </div>
+
+      <div class="row">
+
+        <div class="col-sm-8 blog-main center">
+            <div class="table-responsive">
+                <form method="post">
+
+                <table class="table table-bordered">
+                    <tr>
+                       <th>登录:</th>
+                        <th>&nbsp;</th>
+                    </tr>
+                    <tr><td>用户名：</td>
+                        <td><input type="text" name="username" class="form-control" /></td>
+                    </tr>
+                    <tr>
+                        <td>密码:</td>
+                        <td><input type="password" name="userpass" class="form-control" /></td>
+                    </tr>
+                    <tr>
+                        <td>&nbsp;</td>
+                        <td><input type="submit" name="sub" value="提交"/>
+                            {%- if error -%}
+                            &nbsp;&nbsp;&nbsp;&nbsp;{{ error }}
+                            {%- endif -%}
+                        </td>
+                    </tr>
+                </table>
+                </form>
+            </div>
+
+
+        </div><!-- /.blog-main -->
+
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
+
+    <footer class="blog-footer">
+      <p>Blog template built for <a href="http://getbootstrap.com">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
+      <p>
+        <a href="#">Back to top</a>
+      </p>
+    </footer>
+¬
+</body>
+</html>
